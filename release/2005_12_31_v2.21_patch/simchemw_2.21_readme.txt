@@ -1,0 +1,36 @@
+Simchemistry for Windows v2.21 release
+
+This is an experimental release for evaluation by a university.
+
+The changes are as follows:
+
+o changed code architecture so that the random number generator
+  static data is now associated with a simulation, not the program
+  overall. This is so that if two or more simulations are loaded,
+  they do not affect each other's random number generation.
+
+o Added option in "System Properties" dialogue to set the random
+  number generator to a value. Doing so will be recorded in the
+  script history like this:
+  
+    set_rand_seed 56;
+
+  -- this can be added manually to existing scripts after the
+  "begin_history;" line and before anything starts moving.
+
+o That new setting will reset the random number generator to the
+  specified value (zero is the default which should produce
+  the same initial behaviour as before). This makes the script
+  deterministic from that point on, in that all randomly-based
+  angles and speeds will be chosen identically every time the
+  script is executed (barring user intervention or fast forwarding).
+
+o Updated online help for "system properties" dialogue to talk 
+  about this.
+
+This has been subject to limited informal testing.
+
+To install, replace your existing simchemw.exe and .hlp with the
+files provided.
+
+-- Charlie Wartnaby 31Dec2005
