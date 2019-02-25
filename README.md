@@ -26,3 +26,7 @@ that domain again, hence it is now here. However, it is not maintained.
 
 You are welcome to use the source code in your own programs. See code/LICENCE_README.txt
 for details.
+
+Finally, I'm embarrassed to say that the code is indented mainly with tabs (as was the
+Microsoft fashion when it started) but in places with spaces too, which looks horrible
+now it is here on GitHub. Ah, the wisdom of age...
