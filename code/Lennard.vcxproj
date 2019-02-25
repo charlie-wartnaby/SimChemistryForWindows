@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{3D146B29-2AAF-4887-9A1D-660F3F862B5D}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\cryptlib\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\Lennard.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Lennard.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Lennard.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Lennard.dll</OutputFile>
+      <AdditionalDependencies>oldnames.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>10240</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\LENNARD.DEF</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\cryptlib\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\Lennard.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Lennard.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\Lennard.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>.\Debug\Lennard.exe</OutputFile>
+      <AdditionalDependencies>oldnames.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>10240</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\LENNARD.DEF</ModuleDefinitionFile>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BASEINT.CPP" />
+    <ClCompile Include="CMDVW.CPP" />
+    <ClCompile Include="CONSFRM.CPP" />
+    <ClCompile Include="CONSVW.CPP" />
+    <ClCompile Include="DALOFTDG.CPP" />
+    <ClCompile Include="DELTYPDG.CPP" />
+    <ClCompile Include="DRWGPHDG.CPP" />
+    <ClCompile Include="DRWMOLDG.CPP" />
+    <ClCompile Include="EDINTSDG.CPP" />
+    <ClCompile Include="EDITLJDG.CPP" />
+    <ClCompile Include="EDTXTDLG.CPP" />
+    <ClCompile Include="FIRSTDLG.CPP" />
+    <ClCompile Include="GRAPH.CPP" />
+    <ClCompile Include="GRIDDLG.CPP" />
+    <ClCompile Include="GRPRPSDG.CPP" />
+    <ClCompile Include="LENDOC.CPP" />
+    <ClCompile Include="LENNARD.CPP" />
+    <ClCompile Include="MAINFRM.CPP" />
+    <ClCompile Include="MMHRDINT.CPP" />
+    <ClCompile Include="Mmljint.cpp" />
+    <ClCompile Include="MNCSETDG.CPP" />
+    <ClCompile Include="MNMLDINT.CPP" />
+    <ClCompile Include="MOL.CPP" />
+    <ClCompile Include="MolMolReactiveInt.cpp" />
+    <ClCompile Include="MOLPRPDG.CPP" />
+    <ClCompile Include="MONITOR.CPP" />
+    <ClCompile Include="MONPRPDG.CPP" />
+    <ClCompile Include="MPHRDINT.CPP" />
+    <ClCompile Include="NDWALLDG.CPP" />
+    <ClCompile Include="NEWSVDG.CPP" />
+    <ClCompile Include="NULLINT.CPP" />
+    <ClCompile Include="PISPRPDG.CPP" />
+    <ClCompile Include="PISTON.CPP" />
+    <ClCompile Include="PSTRSTDG.CPP" />
+    <ClCompile Include="ReactiveIntPropsDlg.cpp" />
+    <ClCompile Include="ResolveMultipleSelnDlg.cpp" />
+    <ClCompile Include="SCPDLYDG.CPP" />
+    <ClCompile Include="SELNUMDG.CPP" />
+    <ClCompile Include="SIM.CPP">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Disabled</Optimization>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Speed</FavorSizeOrSpeed>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IntrinsicFunctions>
+      <OmitFramePointers Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</OmitFramePointers>
+    </ClCompile>
+    <ClCompile Include="SIMFRM.CPP" />
+    <ClCompile Include="SIMOBJS.CPP" />
+    <ClCompile Include="SimSizeDlg.cpp" />
+    <ClCompile Include="SIMVW.CPP" />
+    <ClCompile Include="SLIDER.CPP" />
+    <ClCompile Include="SLTYPRDG.CPP" />
+    <ClCompile Include="SMOLPRDG.CPP" />
+    <ClCompile Include="SPISPRDG.CPP" />
+    <ClCompile Include="SSLPRPDG.CPP" />
+    <ClCompile Include="STDAFX.CPP" />
+    <ClCompile Include="SWALLPDG.CPP" />
+    <ClCompile Include="SYSPRPDG.CPP" />
+    <ClCompile Include="TEXTBOX.CPP" />
+    <ClCompile Include="TRACKER.CPP" />
+    <ClCompile Include="TXTPRPDG.CPP" />
+    <ClCompile Include="WALL.CPP" />
+    <ClCompile Include="WALPRPDG.CPP" />
+    <ClCompile Include="WMDEFINT.CPP" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LENNARD.RC" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BASEINT.H" />
+    <ClInclude Include="CMDVW.H" />
+    <ClInclude Include="CONSFRM.H" />
+    <ClInclude Include="CONSVW.H" />
+    <ClInclude Include="DALOFTDG.H" />
+    <ClInclude Include="DELTYPDG.H" />
+    <ClInclude Include="DRWGPHDG.H" />
+    <ClInclude Include="DRWMOLDG.H" />
+    <ClInclude Include="EDINTSDG.H" />
+    <ClInclude Include="EDITLJDG.H" />
+    <ClInclude Include="EDTXTDLG.H" />
+    <ClInclude Include="FIRSTDLG.H" />
+    <ClInclude Include="GRAPHX.H" />
+    <ClInclude Include="GRIDDLG.H" />
+    <ClInclude Include="GRPRPSDG.H" />
+    <ClInclude Include="htmlhelp.h" />
+    <ClInclude Include="LENDOC.H" />
+    <ClInclude Include="LENNARD.H" />
+    <ClInclude Include="MAINFRM.H" />
+    <ClInclude Include="MMHRDINT.H" />
+    <ClInclude Include="MMLJINT.H" />
+    <ClInclude Include="MNCSETDG.H" />
+    <ClInclude Include="MNMLDINT.H" />
+    <ClInclude Include="MOL.H" />
+    <ClInclude Include="MolMolReactiveInt.h" />
+    <ClInclude Include="MOLPRPDG.H" />
+    <ClInclude Include="MONITOR.H" />
+    <ClInclude Include="MONPRPDG.H" />
+    <ClInclude Include="MPHRDINT.H" />
+    <ClInclude Include="NDWALLDG.H" />
+    <ClInclude Include="NEWSVDG.H" />
+    <ClInclude Include="NULLINT.H" />
+    <ClInclude Include="PISPRPDG.H" />
+    <ClInclude Include="PISTON.H" />
+    <ClInclude Include="PSTRSTDG.H" />
+    <ClInclude Include="ReactiveIntPropsDlg.h" />
+    <ClInclude Include="ResolveMultipleSelnDlg.h" />
+    <ClInclude Include="RESOURCE.H" />
+    <ClInclude Include="SCPDLYDG.H" />
+    <ClInclude Include="SELNUMDG.H" />
+    <ClInclude Include="SIM.H" />
+    <ClInclude Include="SIMFRM.H" />
+    <ClInclude Include="SIMOBJS.H" />
+    <ClInclude Include="SimSizeDlg.h" />
+    <ClInclude Include="SIMVW.H" />
+    <ClInclude Include="SLIDER.H" />
+    <ClInclude Include="SLTYPRDG.H" />
+    <ClInclude Include="SMOLPRDG.H" />
+    <ClInclude Include="SPISPRDG.H" />
+    <ClInclude Include="SSLPRPDG.H" />
+    <ClInclude Include="STDAFX.H" />
+    <ClInclude Include="SWALLPDG.H" />
+    <ClInclude Include="SYSPRPDG.H" />
+    <ClInclude Include="TEXTBOX.H" />
+    <ClInclude Include="TRACKER.H" />
+    <ClInclude Include="TXTPRPDG.H" />
+    <ClInclude Include="WALL.H" />
+    <ClInclude Include="WALPRPDG.H" />
+    <ClInclude Include="WMDEFINT.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="htmlhelp.lib" />
+    <Library Include="WinMM.Lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

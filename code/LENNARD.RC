@@ -1,0 +1,1304 @@
+/////////////////////////////////////////////////////////////////////////////
+//                      SimChemistry for Windows
+// www.simchemistry.co.uk    / www.wartnaby.org
+// chem @ simchemistry.co.uk / charlie @ wartnaby.org
+//
+// Copyright 2016 Charlie Wartnaby
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+//   Unless required by applicable law or agreed to in writing, software
+//   distributed under the License is distributed on an "AS IS" BASIS,
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//   See the License for the specific language governing permissions and
+//   limitations under the License.
+/////////////////////////////////////////////////////////////////////////////
+
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""res\\lennard.rc2""  // non-App Studio edited resources\r\n"
+    "\r\n"
+    "#include ""afxres.rc""  \t// Standard components\r\n"
+    "#include ""afxprint.rc""\t// printing/print preview resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "RES\\LENNARD.ICO"
+IDR_LENNTYPE            ICON    DISCARDABLE     "RES\\LENDOC.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "RES\\TOOLBAR.BMP"
+IDB_CLR_GRAPH           BITMAP  DISCARDABLE     "RES\\CLR_GRAP.BMP"
+IDB_FILE_SAVE           BITMAP  DISCARDABLE     "RES\\FILE_SAV.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About and Registration...",  ID_APP_ABOUT
+    END
+END
+
+IDR_LENNTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Object"
+    BEGIN
+        MENUITEM "&Draw",                       ID_OBJECT_DRAW
+        MENUITEM "Type &Properties",            ID_OBJECT_TYPEPROPERTIES
+        POPUP "&New Type Of"
+        BEGIN
+            MENUITEM "Molecule",                    ID_OBJECT_NEWTYPEOF_MOLECULE
+
+            MENUITEM "Wall",                        ID_OBJECT_NEWTYPEOF_WALL
+            MENUITEM "Piston",                      ID_OBJECT_NEWTYPEOF_PISTON
+
+            MENUITEM "Textbox",                     ID_OBJECT_NEWTYPEOF_TEXTBOX
+
+            MENUITEM "Monitor",                     ID_OBJECT_NEWTYPEOF_MONITOR
+
+            MENUITEM "Graph",                       ID_OBJECT_NEWTYPEOF_GRAPH
+
+            MENUITEM "Slider",                      ID_OBJECT_NEWTYPEOF_SLIDER
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_OBJECT_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Delete &Selected\tDel",       ID_OBJECT_DELETESELECTED
+        MENUITEM "Delete &All",                 ID_OBJECT_DELETE_ALL
+        MENUITEM "Delete All of Type...",       ID_OBJECT_DELETEALLOFTYPE
+        MENUITEM "Delete &Type...",             ID_OBJECT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Interactions...",            ID_OBJECT_INTERACTIONS
+        MENUITEM "&Resolve Multiple Selection...", 
+                                                ID_OBJECT_RESOLVEMULTIPLESELECTION
+
+    END
+    POPUP "&Simulation"
+    BEGIN
+        MENUITEM "&Run Simulation",             ID_SIMULATION_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "R&eplay Script from Start",   ID_SIMULATION_REPLAY_SCRIPT
+        MENUITEM "&Fast Forward Script",        ID_SIMULATION_FFWD
+        MENUITEM "&Play Script from Here",      ID_SIMULATION_PLAY_SCRIPT
+        MENUITEM "Re&cord Actions",             ID_SIMULATION_RECORD
+        MENUITEM "Pa&use Script",               ID_SIMULATION_PAUSE_SCRIPT
+        MENUITEM "&Stop Script Replay",         ID_SIMULATION_STOP_SCRIPT
+        MENUITEM SEPARATOR
+        MENUITEM "&Insert Script Delay",        ID_SIMULATION_INSERT
+        MENUITEM "R&eset...",                   ID_SIMULATION_RESET
+        MENUITEM "St&art Script and Simulation", ID_SIMULATION_STARTBOTH
+        MENUITEM "St&op Script and Simulation", ID_SIMULATION_STOPBOTH
+        MENUITEM SEPARATOR
+        MENUITEM "S&ystem Properties...",       ID_SIMULATION_SYSTEMPROPERTIES
+
+        MENUITEM "Si&ze and Scaling...",        ID_SIMULATION_SIZE_SCALING
+        MENUITEM "&Grid Settings...",           ID_OBJECT_GRIDSETTINGS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "Status &Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Simulation",                 ID_VIEW_SIMULATION
+        MENUITEM "&Command Console",            ID_VIEW_CONSOLE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "On Context",                  ID_CONTEXT_HELP
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About and Registration...",  ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+IDR_LENNTYPE ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_OBJECT_DELETESELECTED, VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  34, 22, 247, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SimChemistry for Windows"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SimChemistry for Windows",IDC_PROG_TITLE,53,10,191,60
+    LTEXT           "Copyright © 1996-2016 Charlie Wartnaby",IDC_STATIC,15,
+                    77,169,8
+    DEFPUSHBUTTON   "OK",IDOK,79,166,71,15,WS_GROUP
+    LTEXT           "Version 2.22",IDC_VERSION,15,61,146,10
+    LTEXT           "(Build date/time etc)",IDC_BUILD_DATE,8,188,195,10
+    LTEXT           "Licensed under the Apache License, Version 2.0 (the 'License'); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0",
+                    IDC_REG_USER_TEXT,7,117,229,34
+    LTEXT           "Visit http://www.simchemistry.co.uk or http://www.wartnaby.org for latest version.",
+                    IDC_STATIC,16,95,199,11
+END
+
+IDD_DRAW_MOLS DIALOG DISCARDABLE  0, 0, 233, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Draw Molecules"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Themal distribution at system temperature",
+                    IDC_SYSTEM_SPEED,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,14,57,145,11
+    CONTROL         "Thermal distribution at this temperature:",
+                    IDC_THERMAL_SPEED,"Button",BS_AUTORADIOBUTTON,14,74,142,
+                    11
+    CONTROL         "Fixed speed of:",IDC_FIXED_SPEED,"Button",
+                    BS_AUTORADIOBUTTON,14,89,60,11
+    CONTROL         "Random",IDC_DIRECTION_RANDOM,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,125,66,13
+    CONTROL         "Fixed angle of:",IDC_DIRECTION_FIXED,"Button",
+                    BS_AUTORADIOBUTTON,14,140,74,16
+    EDITTEXT        IDC_THERMAL_TEMPERATURE,157,74,45,13,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDC_FIXED_SPEED_VALUE,157,90,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIRECTION_ANGLE,157,143,45,13,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,18,173,50,14
+    DEFPUSHBUTTON   "Start Drawing",IDOK,139,173,58,14
+    LTEXT           "Choose how you would like molecules added here, then click ""Start Drawing"" to draw. Once drawing, click once on the simulation window to add one molecule; drag out a rectangle to fill a region with close-packed molecules. Press Esc to finish.",
+                    IDC_STATIC,7,5,213,35
+    GROUPBOX        "Choose Initial Speeds",IDC_STATIC,10,44,212,64
+    GROUPBOX        "Choose Initial Directions",IDC_STATIC,10,114,211,47
+    LTEXT           "K",IDC_STATIC,205,77,8,15
+    LTEXT           "m/s",IDC_STATIC,205,90,14,13
+    LTEXT           "deg.",IDC_STATIC,205,144,15,15
+END
+
+IDD_EDIT_MOL_PROPS DIALOG DISCARDABLE  0, 0, 227, 229
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Molecule Type Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,44,8,159,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MASS,107,59,105,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RADIUS,107,77,105,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FORM_ENERGY,107,95,105,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LINE_THICKNESS,88,133,28,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Change Fill Colour",IDC_FILL_COLOUR,20,154,83,16
+    PUSHBUTTON      "Change Line Colour",IDC_LINE_COLOUR,20,176,83,16
+    PUSHBUTTON      "Cancel",IDCANCEL,15,208,50,14
+    DEFPUSHBUTTON   "Update Preview",IDC_UPDATE_PREVIEW,80,208,65,14
+    PUSHBUTTON      "OK",IDOK,160,208,50,14
+    LTEXT           "Name:",IDC_STATIC,12,9,26,9
+    LTEXT           "Mass (a.m.u):",IDC_STATIC,13,62,54,9
+    LTEXT           "Radius (nm):",IDC_STATIC,13,80,52,9
+    GROUPBOX        "Physical Properties",IDC_STATIC,5,48,214,66
+    LTEXT           "Line thickness (0-1):",IDC_STATIC,14,135,69,13
+    EDITTEXT        IDC_PREVIEW_EDITCTRL,126,141,84,51,ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    LTEXT           "Preview at current zoom:",IDC_STATIC,128,130,83,9
+    GROUPBOX        "Drawing Properties",IDC_STATIC,6,120,213,84
+    LTEXT           "(If you are editing an existing type, changing the name will make a copy; if you re-use a name, its properties will be altered.)",
+                    IDC_STATIC,8,25,210,19
+    LTEXT           "Formation Energy (kJ/mol):",IDC_STATIC,13,98,88,9
+END
+
+IDD_EDIT_WALL_PROPS DIALOG DISCARDABLE  0, 0, 231, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Wall Type Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TYPE_NAME,60,4,161,11,ES_AUTOHSCROLL
+    CONTROL         "Use Current System Temperature",IDC_SYS_TEMPERATURE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,13,
+                    57,119,9
+    CONTROL         "Use This Special Temperature (K):",
+                    IDC_SPECIAL_TEMP_RADIO,"Button",BS_AUTORADIOBUTTON,13,71,
+                    121,12
+    EDITTEXT        IDC_SPECIAL_TEMP_EDIT,144,71,50,11,ES_AUTOHSCROLL
+    CONTROL         "Thermal",IDC_THERMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,14,107,38,11
+    CONTROL         "Elastic",IDC_ELASTIC,"Button",BS_AUTORADIOBUTTON,14,133,
+                    38,11
+    EDITTEXT        IDC_LINE_THICK_EDIT,95,165,26,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "Change Line Colour",IDC_LINE_COLOUR_BTN,15,182,101,13
+    PUSHBUTTON      "Cancel",IDCANCEL,11,212,50,14
+    DEFPUSHBUTTON   "Update Preview",IDC_UPDATE_PREVIEW,78,212,69,14
+    PUSHBUTTON      "OK",IDOK,162,212,50,14
+    LTEXT           "Type Name:",IDC_STATIC,7,7,46,11
+    GROUPBOX        "Temperature Used in Thermal Interactions",IDC_STATIC,7,
+                    42,215,44
+    LTEXT           "Line Thickness (pixels):",IDC_STATIC,13,166,77,10
+    EDITTEXT        IDC_PREVIEW_EDITCTRL,130,174,88,24,ES_AUTOHSCROLL
+    LTEXT           "Screen Preview:",IDC_STATIC,134,162,70,10
+    GROUPBOX        "Drawing Properties",IDC_STATIC,7,154,216,50
+    LTEXT           "(If you are editing an existing type, changing name make a copy; if you re-use an old name, its properties will be altered.)",
+                    IDC_STATIC,8,20,214,19
+    GROUPBOX        "Interaction of Molecules with this Wall",IDC_STATIC,7,
+                    94,214,57
+    LTEXT           "Molecules get new speed to match specified temperature and leave at a random angle drawn from cosine distribution",
+                    IDC_STATIC,63,105,153,24
+    LTEXT           "Molecules reflect off the wall as off a mirror",
+                    IDC_STATIC,63,135,153,13
+END
+
+IDD_EDIT_INTS_DLG DIALOG DISCARDABLE  0, 0, 245, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Specify Interactions"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_OBJ1_COMBO,61,48,107,72,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OBJ2_COMBO,61,67,107,72,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Show First Pair",IDC_SHOW_FIRST_BTN,176,47,62,15
+    PUSHBUTTON      "Show Next Pair",IDC_SHOW_NEXT_BTN,176,66,62,15
+    LISTBOX         IDC_INT_TYPE_LIST,5,100,150,35,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Make Selection Active",IDC_MAKE_SEL_ACTIVE,160,102,80,
+                    14
+    PUSHBUTTON      "Edit Details (if needed)",IDC_EDIT_DETAILS_BTN,160,120,
+                    80,14
+    EDITTEXT        IDC_INT_DESC_EDIT,5,153,234,31,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,24,190,50,14
+    PUSHBUTTON      "Help",IDC_HELP_BTN,92,190,46,14
+    DEFPUSHBUTTON   "OK",IDOK,156,190,50,14
+    LTEXT           "Specify here how you would like different types of object (molecules, walls etc) to interact with each other.",
+                    IDC_STATIC,4,5,225,16
+    LTEXT           "For the interaction between these two:",IDC_STATIC,4,35,
+                    135,9
+    LTEXT           "Use the following kind of interaction (if any):",
+                    IDC_STATIC,4,89,157,10
+    LTEXT           "First Object:",IDC_STATIC,4,50,41,8
+    LTEXT           "Second Object:",IDC_STATIC,4,69,52,10
+    LTEXT           "Description of selected kind of interaction:",
+                    IDC_STATIC,4,142,149,8
+END
+
+IDD_EDIT_LJ_DETAILS DIALOG DISCARDABLE  0, 0, 206, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Lennard-Jones Interaction Details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EQM_SEPN,141,45,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WELL_DEPTH,141,66,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX_PE,141,86,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUTOFF_DIST,141,106,60,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,11,141,50,14
+    PUSHBUTTON      "Help",IDC_HELP_BTN,70,141,57,15
+    DEFPUSHBUTTON   "OK",IDOK,137,141,50,14
+    LTEXT           "Equilibrium separation, s (nm):",IDC_STATIC,8,47,109,10
+    LTEXT           "Potential well depth, e (kJ/mol):",IDC_STATIC,8,67,109,
+                    10
+    LTEXT           "Cutoff potential energy, maxp (kJ/mol):",IDC_STATIC,8,
+                    87,130,10
+    LTEXT           "This interaction specifies the potential energy of a pair of molecules as a function of their separation; press Help for a full description of these parameters and a diagram.",
+                    IDC_STATIC,4,4,191,27
+    LTEXT           "Cutoff distance, maxr (nm):",IDC_STATIC,8,107,109,10
+END
+
+IDD_EDIT_PISTON_PROPS DIALOG DISCARDABLE  0, 0, 226, 233
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Piston Type Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TYPE_NAME,60,4,161,11,ES_AUTOHSCROLL
+    COMBOBOX        IDC_WALL_TYPE_COMBO,98,52,120,77,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PISTON_MASS,98,74,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DAMPING_CONST,98,99,78,14,ES_AUTOHSCROLL
+    CONTROL         "Vertical",IDC_RADIO_VERTICAL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,42,136,56,9
+    CONTROL         "Horizontal",IDC_RADIO_HORIZONTAL,"Button",
+                    BS_AUTORADIOBUTTON,122,135,56,9
+    CONTROL         "Apply fixed pressure of (N/m):",IDC_PRESSURE_FIXED,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,
+                    176,120,11
+    CONTROL         "Use force constant of (N/m/nm):",IDC_PRESSURE_VARIABLE,
+                    "Button",BS_AUTORADIOBUTTON,15,191,118,15
+    EDITTEXT        IDC_FIXED_PRESSURE_EDIT,147,175,66,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FORCE_CONST_EDIT,146,194,66,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,33,215,50,14
+    PUSHBUTTON      "OK",IDOK,142,215,50,14
+    LTEXT           "Type Name:",IDC_STATIC,8,7,46,11
+    LTEXT           "(If you are editing an existing type, changing name make a copy; if you re-use an old name, its properties will be altered.)",
+                    IDC_STATIC,8,20,214,19
+    LTEXT           "Based on Walls of Type:",IDC_STATIC,8,54,82,10
+    GROUPBOX        "Allowed Direction of Movement",IDC_STATIC,7,123,212,29
+    LTEXT           "Piston Mass (amu):",IDC_STATIC,8,78,71,11
+    GROUPBOX        "Pressure Applied by Piston (down and/or left)",
+                    IDC_STATIC,7,157,211,53
+    LTEXT           "Damping Constant (/ns):",IDC_STATIC,8,103,86,8
+END
+
+IDD_NEED_WALLS_FOR_PISTONS DIALOG DISCARDABLE  0, 0, 170, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Need Walls to Make Pistons"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Invent Wall Type",IDOK,84,54,67,14
+    PUSHBUTTON      "Cancel",IDCANCEL,12,54,50,14
+    LTEXT           "A piston is based on four walls arranged in a rectangle, and those walls must be of an existing type. There are no types of wall defined at the moment, so you must first invent a type of wall and then use it as the basis of your piston type.",
+                    IDC_STATIC,4,5,161,48
+END
+
+IDD_PISTON_REST_DLG DIALOG DISCARDABLE  0, 0, 194, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Specify Piston Rest Position"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Draw Rest Position",IDOK,105,45,80,14
+    PUSHBUTTON      "Same As Current",IDCANCEL,6,45,77,14
+    LTEXT           "You have drawn the current position of a new piston. If it is to ever act as if it is attached to a spring, we also need to know its rest (stable equilibrium) position. You may indicate that now if you wish.",
+                    IDC_STATIC,2,3,190,35
+END
+
+IDD_DEL_TYPES_DLG DIALOG DISCARDABLE  0, 0, 205, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Delete Object Types"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,112,98,50,14
+    LTEXT           "Deleting an object type will permanently remove all objects of that type. Select object types for deletion from this list:",
+                    IDC_STATIC,5,3,196,16
+    LISTBOX         IDC_TYPE_LIST,9,24,180,68,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete Selection",IDC_DEL_SELN_BTN,33,99,59,13
+END
+
+IDD_TEXTBOX_PROPS_DLG DIALOG DISCARDABLE  0, 0, 238, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Textbox Type Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TYPE_NAME,53,3,161,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "Edit Font",IDC_EDIT_FONT_BTN,84,47,66,14
+    PUSHBUTTON      "Cancel",IDCANCEL,30,145,50,14
+    DEFPUSHBUTTON   "OK",IDOK,149,145,50,14
+    LTEXT           "Type Name:",IDC_STATIC,3,6,46,11
+    LTEXT           "(If you are editing an existing type, changing name make a copy; if you re-use an old name, its properties will be altered.)",
+                    IDC_STATIC,3,19,214,19
+    GROUPBOX        "Example",IDC_STATIC,6,64,224,74
+    LTEXT           "Temperature = 500 K",IDC_EXAMPLE_TEXT,17,76,202,54
+END
+
+IDD_EDIT_TEXTBOX DIALOG DISCARDABLE  0, 0, 285, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Textbox"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Insert Numerical Quantity...",IDC_INSERT_NUM_BTN,107,80,
+                    100,12
+    PUSHBUTTON      "Cancel",IDCANCEL,25,166,50,14
+    PUSHBUTTON      "Type Properties (font etc)...",IDC_TYPE_PROPS_BTN,91,
+                    166,97,14
+    DEFPUSHBUTTON   "OK",IDOK,205,166,50,14
+    EDITTEXT        IDC_EDIT_TEXT_CTRL,5,12,276,66,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_PREVIEW_CTRL,3,95,279,67,ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_DISABLED
+    LTEXT           "Edit text:",IDC_STATIC,15,2,37,10
+    LTEXT           "Screen preview:",IDC_STATIC,14,83,59,10
+END
+
+IDD_SEL_NUMERIC_DLG DIALOG DISCARDABLE  0, 0, 334, 117
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Numerical Quantity"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_NUM_LIST,3,15,328,79,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,54,99,50,14
+    DEFPUSHBUTTON   "OK",IDOK,217,99,50,14
+    LTEXT           "Name",IDC_STATIC,8,4,32,8
+    LTEXT           "Units",IDC_STATIC,295,3,26,8
+    LTEXT           "Description",IDC_STATIC,178,4,47,8
+END
+
+IDD_EDIT_MONITOR_PROPS DIALOG DISCARDABLE  0, 0, 217, 253
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Monitor Type Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,37,7,172,11,ES_AUTOHSCROLL
+    CONTROL         "None",IDC_RADIO_MOL_CONTROLS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,13,60,104,13
+    CONTROL         "Destroy All Molecules",IDC_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON,13,74,120,13
+    CONTROL         "Control Densities and Temperatures",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON,13,88,134,13
+    CONTROL         "Constant Power Heater/Cooler",IDC_RADIO3,"Button",
+                    BS_AUTORADIOBUTTON,13,102,117,13
+    PUSHBUTTON      "Cancel",IDCANCEL,5,233,43,14
+    PUSHBUTTON      "Help",IDC_HELP_BTN,55,233,39,14
+    PUSHBUTTON      "OK",IDOK,170,233,39,14
+    GROUPBOX        "Select Molecular Controls",IDC_STATIC,5,48,207,103
+    LTEXT           "The values of densities and temperatures fixed, or the heater power used, are set as properties for each monitor of this type you draw.",
+                    IDC_STATIC,12,121,180,26
+    LTEXT           "Name:",IDC_STATIC,5,8,26,11
+    LTEXT           "(If you are editing an existing type, changing the name will make a copy; if you re-use a name, its properties will be altered.)",
+                    IDC_STATIC,2,23,210,19
+    GROUPBOX        "Appearance",IDC_STATIC,5,155,207,73
+    PUSHBUTTON      "Colour...",IDC_BUTTON_COLOUR,149,211,54,13
+    CONTROL         "Hatch interior",IDC_CHECK_HATCH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,168,59,10
+    CONTROL         "ID Label",IDC_CHECK_LABEL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,85,168,45,10
+    EDITTEXT        IDC_EDIT_PREVIEW,144,175,62,33,ES_AUTOHSCROLL
+    LTEXT           "Preview",IDC_STATIC,164,164,30,9
+    LTEXT           "(Border will move for controlling monitors and heater/coolers when switched on, not shown here.)",
+                    IDC_STATIC,9,200,125,26
+    LTEXT           "Line thickness (pixels):",IDC_STATIC,12,185,81,8
+    EDITTEXT        IDC_EDIT_THICKNESS,99,182,37,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Update Preview",IDC_BUTTON_PREVIEW,101,233,62,14
+END
+
+IDD_MON_CTRL_SET_DLG DIALOG DISCARDABLE  0, 0, 279, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Control Settings for One Monitor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_FIXER_LIST,8,55,264,47,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TEMPERATURE,102,104,44,12,ES_AUTOHSCROLL
+    CONTROL         "Fix",IDC_CHECK_TEMPERATURE,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,153,105,23,10
+    EDITTEXT        IDC_EDIT_DENSITY,193,104,44,12,ES_AUTOHSCROLL
+    CONTROL         "Fix",IDC_CHECK_DENSITY,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,242,105,23,10
+    EDITTEXT        IDC_EDIT_POWER,95,140,55,11,ES_AUTOHSCROLL
+    CONTROL         "Active Now",IDC_CHECK_POWER_ON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,179,140,74,11
+    DEFPUSHBUTTON   "OK",IDOK,211,167,42,14
+    PUSHBUTTON      "Type Properties...",ID_TYPE_PROPS_BTN,101,168,71,12
+    PUSHBUTTON      "Cancel",IDCANCEL,17,167,42,14
+    LTEXT           "This type of monitor currently does no control, and what's more this description might go onto the next line like this.",
+                    IDC_CONTROL_SUMMARY,9,5,262,19
+    GROUPBOX        "Density/Temperature Fixer Settings",IDC_FIXER_BOX,3,30,
+                    275,91
+    GROUPBOX        "Heater/Cooler Settings",IDC_HEATER_BOX,3,127,275,32
+    LTEXT           "Temperature (K)",IDC_FIXER_HEADING_FIXEDT,98,44,56,8
+    LTEXT           "For Selection:",IDC_FOR_SELECTION,22,106,51,9
+    LTEXT           "Power: (kJ/mol/ns):",IDC_POWER_TEXT,14,142,69,12
+    LTEXT           "Molecule Type",IDC_FIXER_HEADING_MOLTYPE,11,44,52,8
+    LTEXT           "Density (/nm2)",IDC_FIXER_HEADING_FIXEDD,191,44,53,8
+    LTEXT           "Fixed?",IDC_FIXER_HEADING_TFIXED,159,44,26,8
+    LTEXT           "Fixed?",IDC_FIXER_HEADING_DFIXED,248,44,28,8
+END
+
+IDD_SYS_PROPS DIALOG DISCARDABLE  0, 0, 190, 229
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit System Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_SYS_T,133,15,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SYS_G,133,37,50,14,ES_AUTOHSCROLL
+    CONTROL         "Run script automatically after opening from disk",
+                    IDC_CHECK_AUTORUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,69,166,19
+    PUSHBUTTON      "Cancel",IDCANCEL,8,212,50,14
+    DEFPUSHBUTTON   "OK",IDOK,133,212,50,14
+    LTEXT           "System Temperature (K):",IDC_STATIC,9,16,93,14
+    LTEXT           "Acceleration due to Gravity (m/s/ns):",IDC_STATIC,9,40,
+                    125,11
+    LTEXT           "(Affects molecules but not pistons)",IDC_STATIC,13,52,
+                    125,8
+    PUSHBUTTON      "Help",IDC_HELP_BTN,70,212,51,14
+    EDITTEXT        IDC_EDIT_TIMESTEP,133,94,49,14,ES_AUTOHSCROLL
+    LTEXT           "Integration Timestep (ns):",IDC_STATIC,6,96,85,8
+    CONTROL         "Use Automatic Timestep",IDC_CHECK_AUTO_TIMESTEP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,114,93,10
+    LTEXT           "Averaging time constant for smoothed measurements (ns):",
+                    IDC_STATIC,7,141,113,18
+    EDITTEXT        IDC_EDIT_AVERAGING_TC,133,142,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RAND_SEED,133,173,50,13,ES_AUTOHSCROLL
+    LTEXT           "(-1 to leave alone; zero is default startup value.)",
+                    IDC_STATIC,13,187,164,18
+    LTEXT           "New integer random seed value:",IDC_STATIC,9,174,118,12
+    GROUPBOX        "",IDC_STATIC,3,88,183,42
+    GROUPBOX        "",IDC_STATIC,3,135,183,26
+    GROUPBOX        "",IDC_STATIC,3,165,183,42
+    GROUPBOX        "Physical",IDC_STATIC,3,5,183,59
+END
+
+IDD_SCRIPT_DELAY DIALOG DISCARDABLE  0, 0, 170, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Insert Script Delay"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_DELAY_SEC,87,4,75,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,13,73,50,14
+    DEFPUSHBUTTON   "OK",IDOK,101,73,50,14
+    LTEXT           "Enter delay (sec):",IDC_STATIC,5,6,67,10
+    LTEXT           "When the script is replayed, it will pause here for the specified number of seconds if the simulation is stopped, or longer if the simulation is still running and the individual PC cannot achieve the desired speed.",
+                    IDC_STATIC,2,24,169,41
+END
+
+IDD_FIRST_TIME_DLG DIALOG DISCARDABLE  0, 0, 170, 132
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Welcome"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,46,100,70,15
+    LTEXT           "Welcome to SimChemistry for Windows!",IDC_STATIC,4,3,
+                    150,12
+    LTEXT           "To get started, try running some of the demo simulations provided (the files ending in .scw) by choosing Open from the File menu. Start with ""tour.scw"" for a guided tour.",
+                    IDC_STATIC,4,17,159,37
+    LTEXT           "Browse the online help (choose Index from the Help menu) to get an overview of what the program does and learn how to proceed further.",
+                    IDC_STATIC,4,59,160,33
+    CONTROL         "Show me this information again in future",
+                    IDC_CHECK_AGAIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,
+                    119,149,11
+END
+
+IDD_DEL_ALL_OF_TYPE DIALOG DISCARDABLE  0, 0, 205, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Delete All of Type"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,111,116,50,14
+    LTEXT           "Select a type and press 'Delete Selection' to remove any instances of that type currently present. The object type will remain intact for further use.",
+                    IDC_STATIC,5,3,196,28
+    LISTBOX         IDC_TYPE_LIST,9,35,180,75,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete Selection",IDC_DEL_SELN_BTN,33,118,59,13
+END
+
+IDD_GRAPH_TYPE_PROPS_DLG DIALOG DISCARDABLE  0, 0, 187, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Graph Type Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,106,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,21,73,50,14
+    EDITTEXT        IDC_EDIT_NAME,63,11,112,10,ES_AUTOHSCROLL
+    LTEXT           "Name:",IDC_STATIC,8,8,26,11
+    LTEXT           "(If you are editing an existing type, changing the name will make a copy; if you re-use a name, its properties will be altered.)",
+                    IDC_STATIC,5,30,174,26
+END
+
+IDD_DRAW_GRAPH_DLG DIALOG DISCARDABLE  0, 0, 227, 234
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Graph Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Graph Title:",IDC_CHECK_TITLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,6,53,9
+    EDITTEXT        IDC_EDIT_GRAPH_TITLE,67,4,142,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Select X Data",IDC_BUTTON_SEL_X,12,28,62,16
+    CONTROL         "X-Axis Label:",IDC_CHECK_XLABEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,52,56,8
+    EDITTEXT        IDC_EDIT_X_LABEL,93,49,125,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Select Y Data",IDC_BUTTON_SEL_Y,10,79,64,15
+    CONTROL         "Y-Axis Label:",IDC_CHECK_YLABEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,101,56,8
+    EDITTEXT        IDC_EDIT_Y_LABEL,93,98,125,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,165,216,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,10,216,50,14
+    LTEXT           "(Please select Y data)",IDC_Y_DATA_TEXT,84,81,122,8
+    LTEXT           "(Please select X data)",IDC_X_DATA_TEXT,88,32,122,8
+    GROUPBOX        "X-Axis",IDC_STATIC,4,17,220,49
+    GROUPBOX        "Y-Axis",IDC_STATIC,4,68,220,48
+    GROUPBOX        "Position",IDC_STATIC,3,164,220,47
+    LTEXT           "Y-Top:",IDC_STATIC,117,178,30,11
+    LTEXT           "X-Left:",IDC_STATIC,9,177,27,11
+    LTEXT           "X-Right:",IDC_STATIC,9,195,28,11
+    LTEXT           "Y-Bottom:",IDC_STATIC,117,193,33,11
+    EDITTEXT        IDC_EDIT_XLEFT,46,175,54,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YTOP,154,177,54,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XRIGHT,46,193,54,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YBOTTOM,154,194,54,12,ES_AUTOHSCROLL
+    GROUPBOX        "Data Points",IDC_STATIC,4,119,219,45
+    PUSHBUTTON      "Colour...",IDC_BUTTON_COLOUR,103,146,55,13
+    EDITTEXT        IDC_EDIT_PREVIEW,164,139,54,21,ES_AUTOHSCROLL
+    LTEXT           "Preview",IDC_STATIC,177,127,33,8
+    LTEXT           "Style:",IDC_STATIC,9,130,25,9
+    LTEXT           "Size (pixels):",IDC_STATIC,9,150,47,10
+    COMBOBOX        IDC_COMBO_STYLE,36,129,61,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Filled",IDC_CHECK_FILLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,108,131,46,10
+    EDITTEXT        IDC_EDIT_SIZE,60,147,37,11,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Update Preview",IDC_BUTTON_UPDATE_PREVIEW,74,216,77,14
+END
+
+IDD_SMOL_PROPS DIALOG DISCARDABLE  0, 0, 186, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Molecule Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_X,114,21,68,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y,114,34,68,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VX,114,47,68,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VY,114,60,68,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DIRECTION,114,73,68,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SPEED,114,86,68,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "New Random Direction",IDC_NEW_RANDOM_DIRN_BTN,9,103,80,
+                    14
+    PUSHBUTTON      "New Thermal Speed",IDC_NEW_THERM_SPEED_BTN,9,122,80,14
+    CONTROL         "Current System Temperature (?? K)",IDC_RADIO_SYS_TEMP,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,10,
+                    141,165,10
+    CONTROL         "This Temperature (K):",IDC_RADIO_THIS_TEMP,"Button",
+                    BS_AUTORADIOBUTTON,10,157,85,10
+    EDITTEXT        IDC_THIS_TEMP_EDIT,99,156,47,11,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,5,181,50,14
+    PUSHBUTTON      "Type Properties...",IDC_TYPE_PROPS_BTN,61,180,62,14
+    PUSHBUTTON      "OK",ID_OKBTN,129,180,50,14
+    LTEXT           "x-coordinate (nm):",IDC_STATIC,5,23,73,9
+    LTEXT           "y-coordinate (nm):",IDC_STATIC,5,36,73,9
+    LTEXT           "x-velocity (m/s):",IDC_STATIC,5,49,66,9
+    LTEXT           "y-velocity (m/s):",IDC_STATIC,5,62,75,9
+    LTEXT           "speed (m/s):",IDC_STATIC,5,88,69,9
+    LTEXT           "angle from x-axis (degrees):",IDC_STATIC,5,75,93,9
+    LTEXT           "Molecule Type: (type)",IDC_MOL_TYPE_TEXT,10,5,166,8
+    GROUPBOX        "",IDC_STATIC,4,115,179,59
+    LTEXT           "(max result 10000 m/s)",IDC_MAX_VEL_TEXT,94,126,83,8
+END
+
+IDD_GRID_DLG DIALOG DISCARDABLE  0, 0, 179, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Drawing Grid Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,102,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,25,76,50,14
+    CONTROL         "Use Grid",IDC_CHECK_USE_GRID,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,39,59,8
+    LTEXT           "Current grid size (nm):",IDC_STATIC,13,56,78,8
+    EDITTEXT        IDC_EDIT_GRID,105,53,47,14,ES_AUTOHSCROLL
+    LTEXT           "With the grid switched on, the cursor will jump between gridpoints as you draw most types of object (but not molecules).",
+                    IDC_STATIC,4,5,172,30
+END
+
+IDD_SWALL_PROPS DIALOG DISCARDABLE  0, 0, 187, 162
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Wall Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_X1,114,21,68,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y1,114,34,68,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_X2,114,47,68,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y2,114,60,68,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,4,142,50,14
+    PUSHBUTTON      "Type Properties...",IDC_TYPE_PROPS_BTN,60,142,62,14
+    PUSHBUTTON      "OK",ID_OKBTN,128,142,50,14
+    LTEXT           "x-coordinate 1 (nm):",IDC_STATIC,5,23,73,9
+    LTEXT           "y-coordinate 1 (nm):",IDC_STATIC,5,36,73,9
+    LTEXT           "x-coordinate 2 (nm):",IDC_STATIC,5,49,66,9
+    LTEXT           "y-coordinate 2 (nm):",IDC_STATIC,5,62,75,9
+    LTEXT           "Wall Type: (type)",IDC_WAL_TYPE_TEXT,10,5,166,8
+    PUSHBUTTON      "Snap This Wall to Grid",IDC_GRIDIFY_BTN,5,113,80,14
+    LTEXT           "The system drawing grid is currently off and set to 0.1 nm:",
+                    IDC_GRID_SETTINGS_TEXT,5,85,172,22
+    PUSHBUTTON      "Grid Settings...",IDC_GRID_SETTINGS_BTN,100,113,80,14
+END
+
+IDD_SPISTON_PROPS_DLG DIALOG DISCARDABLE  0, 0, 206, 252
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Piston Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_XLEFT,53,28,43,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YTOP,151,29,43,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XRIGHT,53,45,43,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YBOT,151,45,43,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,11,231,50,14
+    PUSHBUTTON      "Type Properties...",IDC_TYPE_PROPS_BTN,68,231,62,14
+    PUSHBUTTON      "OK",ID_OKBTN,137,231,50,14
+    LTEXT           "Left (nm):",IDC_STATIC,7,30,34,9
+    LTEXT           "Top (nm):",IDC_STATIC,101,30,36,9
+    LTEXT           "Right (nm):",IDC_STATIC,7,44,40,9
+    LTEXT           "Bottom (nm):",IDC_STATIC,101,44,44,9
+    LTEXT           "Piston Type: (type)",IDC_PISTON_TYPE_TEXT,10,5,182,8
+    PUSHBUTTON      "Snap This Piston to Grid",IDC_GRIDIFY_BTN,11,214,85,14
+    LTEXT           "The system drawing grid is currently off and set to 0.1 nm:",
+                    IDC_GRID_SETTINGS_TEXT,4,189,197,19
+    PUSHBUTTON      "Grid Settings...",IDC_GRID_SETTINGS_BTN,106,214,80,14
+    EDITTEXT        IDC_EDIT_YTREST,91,79,68,11,ES_AUTOHSCROLL
+    LTEXT           "Rest position top (nm):",IDC_STATIC,7,81,75,9
+    EDITTEXT        IDC_EDIT_XLREST,91,65,68,11,ES_AUTOHSCROLL
+    LTEXT           "Rest position left (nm):",IDC_STATIC,7,67,75,9
+    GROUPBOX        "Coordinates",IDC_STATIC,4,15,198,82
+    GROUPBOX        "Or Change Size Instead",IDC_STATIC,4,105,198,32
+    LTEXT           "Width (nm):",IDC_STATIC,7,121,43,10
+    LTEXT           "Height (nm):",IDC_STATIC,105,121,43,10
+    EDITTEXT        IDC_EDIT_WIDTH,55,120,43,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEIGHT,154,120,43,11,ES_AUTOHSCROLL
+    GROUPBOX        "Velocity",IDC_STATIC,4,147,198,31
+    LTEXT           "Right (m/s):",IDC_STATIC,8,162,40,8
+    LTEXT           "Up (m/s):",IDC_STATIC,106,162,37,8
+    EDITTEXT        IDC_EDIT_VX,57,162,43,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VY,154,162,43,10,ES_AUTOHSCROLL
+END
+
+IDD_SLIDER_PROPS_DLG DIALOG DISCARDABLE  0, 0, 195, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Slider Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,111,138,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,27,138,50,14
+    CONTROL         "Title:",IDC_CHECK_TITLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,9,36,9
+    EDITTEXT        IDC_EDIT_TITLE,48,8,142,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Select Quantity to Control...",IDC_SELECT_BTN,34,30,110,
+                    13
+    LTEXT           "Maximum Scale Value:",IDC_STATIC,6,112,93,8
+    LTEXT           "Minimum Scale Value:",IDC_STATIC,6,94,86,9
+    EDITTEXT        IDC_EDIT_MIN_VALUE,121,94,61,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAX_VALUE,121,112,61,13,ES_AUTOHSCROLL
+    LTEXT           "Selected: (whatever gets selected)",IDC_SELECTED_TEXT,6,
+                    49,184,19
+    LTEXT           "Units: (whatever)",IDC_UNITS_TEXT,20,74,160,8
+END
+
+IDD_SLIDER_TYPE_PROPS_DLG DIALOG DISCARDABLE  0, 0, 187, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Slider Type Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,106,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,21,73,50,14
+    EDITTEXT        IDC_EDIT_NAME,63,11,112,10,ES_AUTOHSCROLL
+    LTEXT           "Name:",IDC_STATIC,8,8,26,11
+    LTEXT           "(If you are editing an existing type, changing the name will make a copy; if you re-use a name, its properties will be altered.)",
+                    IDC_STATIC,5,30,174,26
+END
+
+IDD_NEW_SLIDER_VALUE_DLG DIALOG DISCARDABLE  0, 0, 155, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter New Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_VALUE,85,4,60,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,13,61,50,14
+    DEFPUSHBUTTON   "OK",IDOK,90,61,50,14
+    LTEXT           "Enter New Value:",IDC_STATIC,4,5,64,10
+    LTEXT           "Minimum Value = 5 K",IDC_MIN_VALUE_TEXT,9,24,144,10
+    LTEXT           "Maximum Value = 1000 K",IDC_MAX_VALUE_TEXT,9,40,114,10
+END
+
+IDD_REGISTER_DLG DIALOG DISCARDABLE  0, 0, 231, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Register"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,77,48,149,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NUM_USERS,119,67,107,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REG_KEY,77,87,149,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,21,144,50,14
+    PUSHBUTTON      "Order",IDC_ORDER_BTN,80,144,54,14
+    DEFPUSHBUTTON   "OK",IDOK,145,144,50,14
+    LTEXT           "Name:",IDC_STATIC,6,49,33,11
+    LTEXT           "Registration Code:",IDC_STATIC,6,88,65,10
+    LTEXT           "If you have already ordered and received your registration code, enter it below along with your name, exactly as specified on the letter or email from me. If not, click the 'Order' button to open the help page which explains how to order.",
+                    IDC_STATIC,6,5,217,39
+    LTEXT           "The registration code will not be displayed by this program again, to prevent other users of your machine pinching it when you're not around! Please make a note of it elsewhere in case you want to reinstall in future.",
+                    IDC_STATIC,5,105,221,35
+    LTEXT           "Number of Users (usually 1):",IDC_STATIC,6,68,103,11
+END
+
+IDD_SIM_SIZE_DLG DIALOG DISCARDABLE  0, 0, 229, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Simulation Size"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Close",IDOK,172,152,50,14
+    LTEXT           "The same simulation area is shown whatever size you set the display window to. Set that simulation area here.",
+                    IDC_STATIC,7,7,215,22
+    PUSHBUTTON      "Use Default Sim Area",IDC_DEFAULT,7,129,102,14
+    EDITTEXT        IDC_EDIT_LEFT,142,35,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BOTTOM,142,55,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WIDTH,142,77,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEIGHT,142,99,40,14,ES_AUTOHSCROLL
+    LTEXT           "Left edge coordinate (nm):",IDC_STATIC,19,37,84,8
+    LTEXT           "Bottom edge coordinate (nm):",IDC_STATIC,19,59,94,8
+    LTEXT           "Width (nm):",IDC_STATIC,19,81,37,8
+    LTEXT           "Height (nm):",IDC_STATIC,19,103,39,8
+    PUSHBUTTON      "Use Current Size Like v1.0",IDC_LIKE_V10,120,129,102,14
+    PUSHBUTTON      "Help",IDC_HELP_BTN,63,152,50,14
+    DEFPUSHBUTTON   "Apply",IDC_APPLY,118,152,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,152,50,14
+END
+
+IDD_MULTIPLE_SELN DIALOG DISCARDABLE  0, 0, 276, 214
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Resolve Multiple Selection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,155,193,50,14
+    CONTROL         "Always display this window if single click selects multiple objects",
+                    IDC_ALWAYS_FOR_SINGLE_CLICK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,177,216,10
+    LISTBOX         IDC_OBJECT_LIST,7,52,262,115,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Unselect All",IDC_UNSELECT_ALL,58,193,50,14
+    LTEXT           "All the objects that were selected when you displayed this window are listed below. To see your selections in the simulation, move this window to one side.",
+                    IDC_STATIC,7,7,262,16
+    LTEXT           "To have just one object selected and the rest unselected, click on it.",
+                    IDC_STATIC,7,27,262,8
+    LTEXT           "To add or remove a selection leaving all others alone, use ctrl-click instead.",
+                    IDC_STATIC,7,39,262,8
+END
+
+IDD_REACTIVE_INT_PROPS DIALOG DISCARDABLE  0, 0, 269, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Reactive Interaction Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ACTIVATION_ENERGY,135,39,90,14,ES_AUTOHSCROLL
+    CONTROL         "Form two product molecules",IDC_CHECK_TWO_PRODS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,60,104,10
+    CONTROL         "Set up reverse reaction automatically",
+                    IDC_CHECK_DO_REVERSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,130,60,129,10
+    COMBOBOX        IDC_COMBO_PROD1,3,90,125,79,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PROD2,140,90,125,79,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,3,213,50,14
+    PUSHBUTTON      "Help",IDC_HELP_BTN,101,212,57,15
+    PUSHBUTTON      "OK",ID_MY_OK,215,213,50,14
+    LTEXT           "In this interaction the two molecules will react if they have sufficient kinetic energy to overcome both the activation energy you specify and any increase in total formation (potential) energy involved. Total energy will be conserved.",
+                    IDC_STATIC,3,7,262,25
+    LTEXT           "Activation barrier (kJ/mol):",IDC_STATIC,25,42,94,8
+    GROUPBOX        "Notes",IDC_STATIC,3,164,262,46
+    LTEXT           "Mass is not conserved by this reaction, and so momentum cannot be either. The product molecule nitrogen is too large to occupy the space that was filled by the reactant molecule oxygen, so product molecules may be created overlapping other molecules etc",
+                    IDC_NOTES_TEXT,9,174,250,33
+    LTEXT           "Select product molecule 1:",IDC_STATIC,21,79,85,8
+    LTEXT           "Select product molecule 2:",IDC_SEL_PROD2_TEXT,153,79,
+                    85,8
+    LTEXT           "Equation: oxygen + oxygen --> oxygen + oxygen",
+                    IDC_EQN_TEXT,18,110,235,18
+    LTEXT           "Overall energy change in reaction = 45 kJ/mol (i.e. exothermic)",
+                    IDC_ENERGY_CHANGE_TEXT,17,129,241,18
+    LTEXT           "Total energy barrier from reactants to products = 155 kJ/mol",
+                    IDC_ENERGY_BARRIER_TEXT,17,151,216,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+AFX_ID_HAND             CURSOR  PRELOAD DISCARDABLE "RES\\HAND.CUR"
+IDC_SLIDE_LEFT_RIGHT    CURSOR  PRELOAD DISCARDABLE "RES\\SLIDE_LR.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DRAW_GRAPH_DLG DLGINIT
+BEGIN
+    IDC_COMBO_STYLE, 0x403, 7, 0
+0x6963, 0x6372, 0x656c, "\000" 
+    IDC_COMBO_STYLE, 0x403, 6, 0
+0x7263, 0x7369, 0x0073, 
+    IDC_COMBO_STYLE, 0x403, 6, 0
+0x7263, 0x736f, 0x0073, 
+    IDC_COMBO_STYLE, 0x403, 7, 0
+0x7173, 0x6175, 0x6572, "\000" 
+    IDC_COMBO_STYLE, 0x403, 9, 0
+0x7274, 0x6169, 0x676e, 0x656c, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 244
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_SIM_SIZE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_MULTIPLE_SELN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_REACTIVE_INT_PROPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "SimChemistry for Windows"
+    IDR_LENNTYPE            "\nUntitled\n\nSimChemistry/Win (*.scw)\n.scw\nSimChemW.Document\nSimChemistry for Windows Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SimChemistry for Windows"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document"
+    ID_FILE_OPEN            "Open an existing document"
+    ID_FILE_CLOSE           "Close the active document"
+    ID_FILE_SAVE            "Save the active document"
+    ID_FILE_SAVE_AS         "Save the active document with a new name"
+    ID_FILE_PAGE_SETUP      "Change the printing options"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options"
+    ID_FILE_PRINT           "Print the active document"
+    ID_FILE_PRINT_PREVIEW   "Display full pages"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright"
+    ID_APP_EXIT             "Quit the application; prompts to save documents"
+    ID_HELP_INDEX           "List Help topics"
+    ID_HELP_USING           "Display instructions about how to use help"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows"
+    ID_HELP                 "Display help for current task or command"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane"
+    ID_PREV_PANE            "Switch back to the previous window pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles"
+    ID_WINDOW_SPLIT         "Split the active window into panes"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_CLEAR_ALL       "Erase everything"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard"
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "Insert Clipboard contents"
+    ID_EDIT_REPEAT          "Repeat the last action"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Undo the last action"
+    ID_EDIT_REDO            "Redo the previously undone action"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SIMULATION      "Shows graphical picture of simulated area"
+    ID_VIEW_CONSOLE         "Shows text window for viewing old commands and typing new ones"
+    ID_OBJECT_DELETE        "Completely remove a type of object and any objects of that type"
+    ID_OBJECT_NEWTYPEOF_MOLECULE 
+                            "Introduce a new type of molecule and define mass, radius, colour etc"
+    ID_OBJECT_DRAW          "Add individual objects to the simulation graphically"
+    ID_OBJECT_TYPEPROPERTIES 
+                            "Change the properties of existing types of object"
+    ID_OBJECT_NEWTYPEOF_WALL "Invent a new kind of wall to contain molecules"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OBJECT_INTERACTIONS  "Define how different objects react to each other in the simulation"
+    ID_SIMULATION_RUN       "Makes molecules and other mobile entities start moving"
+    ID_SIMULATION_STOP      "Halts motion of molecules and other mobile entities"
+    ID_OBJECT_NEWTYPEOF_PISTON 
+                            "Invent a new kind of piston to squeeze molecules"
+    ID_SIMULATION_REPLAY_SCRIPT 
+                            "Delete all current objects and replay stored actions from history"
+    ID_SIMULATION_RESET     "Deletes all objects and all types and restores default system parameters"
+    ID_OBJECT_NEWTYPEOF_TEXTBOX 
+                            "Create a new sort of text annotation, eg a title or label"
+    ID_OBJECT_NEWTYPEOF_MONITOR 
+                            "New type of box to make measurements of temperature, pressure etc"
+    ID_SIMULATION_SYSTEMPROPERTIES 
+                            "Edit the system temperature and acceleration due to gravity"
+    ID_OBJECT_DELETESELECTED 
+                            "Delete any simulation objects currently highlighted on screen"
+    ID_OBJECT_BIBBLEYPOP    "Ibbledy bibbledy pop"
+    ID_SIMULATION_INSERT    "Add a pause to script so that it will wait here when replayed"
+    ID_SIMULATION_PLAY_SCRIPT 
+                            "Starts or continues playing pre-recorded script of actions"
+    ID_SIMULATION_PAUSE_SCRIPT 
+                            "Halts script replay at this point until a key is pressed"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SIMULATION_STOPSCRIPT "Stops replay of script of recorded actions."
+    ID_SIMULATION_STOP_SCRIPT "Stops replay of script of stored actions"
+    ID_SIMULATION_FFWD      "Skip ahead through script replay"
+    ID_SIMULATION_RECORD    "Record all actions for subsequent replay"
+    ID_OBJECT_CLEARSCREEN   "Deletes all simulation objects on screen but not their object types"
+    ID_OBJECT_DELETEALLOFTYPE 
+                            "Deletes all current objects of a given type but leaves type intact"
+    ID_OBJECT_NEWTYPEOF_GRAPH 
+                            "New type of graph to display pressure vs temperature, speed distributions, etc"
+    ID_OBJECT_PROPERTIES    "Edit properties of single selected object, if that exists"
+    ID_OBJECT_GRIDSETTINGS  "Modify the state of the grid used to align objects during drawing"
+    ID_OBJECT_NEWTYPEOF_SLIDER 
+                            "Create type of on-screen slide control to vary temperatures etc"
+    ID_SIM_SIZE_SCALING     "Use to change viewable simulation area"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OBJECT_RESOLVEMULTIPLESELECTION 
+                            "If several objects are selected, choose that you meant to select here."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res\lennard.rc2"  // non-App Studio edited resources
+
+#include "afxres.rc"  	// Standard components
+#include "afxprint.rc"	// printing/print preview resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

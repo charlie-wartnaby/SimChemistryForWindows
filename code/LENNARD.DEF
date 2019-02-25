@@ -1,0 +1,16 @@
+; lennard.def : Declares the module parameters for the application.
+
+NAME         LENNARD
+DESCRIPTION  'LENNARD Windows Application'
+
+; next line originated from MSVC1.5, causes error in MSVC5:
+; EXETYPE      WINDOWS
+
+; following removed for MSVC6:
+;CODE         PRELOAD MOVEABLE DISCARDABLE
+;DATA         PRELOAD MOVEABLE MULTIPLE
+
+HEAPSIZE     1024   ; initial heap size
+; Stack size is passed as argument to linker's /STACK option
+
+

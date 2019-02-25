@@ -1,0 +1,93 @@
+// MAKEHELP.BAT generated Help Map file.  Used by lennard.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_HELP_BTN                            0x10003
+HID_TYPE_PROPS_BTN                      0x10004
+HID_OKBTN                               0x10441
+HID_MY_OK                               0x10483
+HIDM_OBJECT_DRAW_BASE                   0x17000
+HID_VIEW_SIMULATION                     0x18004
+HID_VIEW_CONSOLE                        0x18005
+HID_OBJECT_DELETE                       0x18008
+HID_LJ_INTERACTION                      0x18009
+HID_REGISTRATION                        0x1800A
+HID_OBJECT_NEWTYPEOF_MOLECULE           0x1800C
+HID_OBJECT_DRAW                         0x1800D
+HID_OBJECT_TYPEPROPERTIES               0x1800E
+HID_OBJECT_NEWTYPEOF_WALL               0x1800F
+HID_OBJECT_INTERACTIONS                 0x18010
+HID_SIMULATION_RUN                      0x18011
+HID_SIMULATION_STOP                     0x18012
+HID_OBJECT_NEWTYPEOF_PISTON             0x18013
+HID_SIMULATION_REPLAY_SCRIPT            0x18014
+HID_SIMULATION_RESET                    0x18015
+HID_OBJECT_NEWTYPEOF_TEXTBOX            0x18016
+HID_OBJECT_NEWTYPEOF_MONITOR            0x18017
+HID_SIMULATION_SYSTEMPROPERTIES         0x18018
+HID_OBJECT_DELETESELECTED               0x18019
+HID_OBJECT_BIBBLEYPOP                   0x1801B
+HID_SIMULATION_INSERT                   0x1801C
+HID_SIMULATION_PLAY_SCRIPT              0x1801E
+HID_SIMULATION_PAUSE_SCRIPT             0x1801F
+HID_SIMULATION_STOPSCRIPT               0x18020
+HID_SIMULATION_STOP_SCRIPT              0x18021
+HID_SIMULATION_FFWD                     0x18022
+HID_SIMULATION_RECORD                   0x18023
+HID_OBJECT_CLEARSCREEN                  0x18024
+HID_OBJECT_DELETEALLOFTYPE              0x18025
+HID_OBJECT_DELETE_ALL                   0x18026
+HID_OBJECT_NEWTYPEOF_GRAPH              0x18027
+HID_OBJECT_PROPERTIES                   0x18028
+HID_OBJECT_GRIDSETTINGS                 0x1802A
+HID_OBJECT_NEWTYPEOF_SLIDER             0x1802B
+HID_SIMULATION_STOPBOTH                 0x1802C
+HID_SIMULATION_STARTBOTH                0x1802D
+HID_SIM_SIZE_SCALING                    0x1802E
+HID_SIMULATION_SIZE_SCALING             0x1802F
+HID_OBJECT_RESOLVEMULTIPLESELECTION     0x18030
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20002
+HIDR_LENNTYPE                           0x20003
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_DRAW_MOLS                          0x20066
+HIDD_NEW_TYPE_MOL                       0x20067
+HIDD_EDIT_MOL_PROPS                     0x20068
+HIDD_EDIT_WALL_PROPS                    0x20069
+HIDD_DRAW_WALLS                         0x2006A
+HIDD_EDIT_INTS_DLG                      0x2006B
+HIDD_EDIT_LJ_DETAILS                    0x2006D
+HIDD_EDIT_PISTON_PROPS                  0x2006E
+HIDD_NEED_WALLS_FOR_PISTONS             0x2006F
+HIDD_DRAW_PISTON_DLG                    0x20070
+HIDD_PISTON_REST_DLG                    0x20071
+HIDD_DEL_TYPES_DLG                      0x20072
+HIDD_TEXTBOX_PROPS_DLG                  0x20073
+HIDD_EDIT_TEXTBOX                       0x20074
+HIDD_SEL_NUMERIC_DLG                    0x20075
+HIDD_EDIT_MONITOR_PROPS                 0x20076
+HIDD_MON_CTRL_SET_DLG                   0x20077
+HIDD_DRAW_MONITOR_DLG                   0x20078
+HIDD_SYS_PROPS                          0x20079
+HIDD_SCRIPT_DELAY                       0x2007C
+HIDD_FIRST_TIME_DLG                     0x2007D
+HIDD_DEL_ALL_OF_TYPE                    0x2007E
+HIDD_GRAPH_TYPE_PROPS_DLG               0x2007F
+HIDD_DRAW_GRAPH_DLG                     0x20080
+HIDD_SMOL_PROPS                         0x20081
+HIDD_GRID_DLG                           0x20083
+HIDD_SWALL_PROPS                        0x20084
+HIDD_SPISTON_PROPS_DLG                  0x20085
+HIDD_SLIDER_PROPS_DLG                   0x20086
+HIDD_SLIDER_TYPE_PROPS_DLG              0x20087
+HIDD_NEW_SLIDER_VALUE_DLG               0x20089
+HIDD_REGISTER_DLG                       0x2008C
+HIDD_SIM_SIZE_DLG                       0x2008E
+HIDD_MULTIPLE_SELN                      0x2008F
+HIDD_REACTIVE_INT_PROPS                 0x20090
+ 
+// Frame Controls (IDW_*) 

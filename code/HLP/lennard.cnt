@@ -1,0 +1,22 @@
+:Base lennard.hlp
+1 Introduction=main_index
+1 Overview=overview
+1 Running ready-made simulation scripts=running_scripts
+1 Building your own simulation scripts=building_simulations
+1 Simulation Object Types=object_types
+1 Interactions between Objects=HID_OBJECT_INTERACTIONS
+1 System Requirements=system_requirements
+1 About molecular dynamics simulation=about_md
+1 Changes since last version and migration=changes_since_last
+1 Future Development=future_dev
+1 Contacting the author=contact_author
+
+1 Commands and Menus
+2   Toolbar buttons=AFX_HIDW_TOOLBAR
+2   File menu=menu_file
+2   Edit menu=menu_edit
+2   Object menu=menu_object
+2   Simulation menu=menu_simulation
+2   View menu=menu_view
+2   Window menu=menu_window
+2   Help menu=menu_help
