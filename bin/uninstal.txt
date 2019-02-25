@@ -1,0 +1,14 @@
+Uninstalling SimChemistry for Windows
+=====================================
+
+To remove SimChemistry for Windows v2.0 or higher, do
+Start... Settings... Control Panel... Add/Remove Programs,
+select "SimChemistry for Windows", click Add/Remove and
+confirm that you wish to remove it.
+
+For earlier versions, save any files you wish to keep, and 
+then delete the directory to which it was installed (c:\simchemw
+by default) with all its contents. Additionally delete the 
+simchemw.ini file from your Windows directory.
+To remove Start menu items, do Start... Settings... Taskbar,
+click the "Start Menu Programs" tab and then click Remove.
