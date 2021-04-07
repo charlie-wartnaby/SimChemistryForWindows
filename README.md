@@ -1,4 +1,4 @@
-# SimChemistryForWindows ![icon](pictures/scwicon.gif)
+# SimChemistryForWindows ![icon](pictures/bigscwicon.gif)
 
 Archived source, documents and executable for SimChemistry for Windows
 
