@@ -2,7 +2,7 @@
 
 Archived source, documents and executable for SimChemistry for Windows
 
-(c) Copyright 1996-2019 Charlie Wartnaby
+(c) Copyright 1996-2021 Charlie Wartnaby
 
 # Description
 
@@ -18,8 +18,21 @@ as hard 2D discs which collide instantaneously), and soft force-based motion.
 As well as molecules, it includes pistons (which squeeze molecules), walls to contain them,
 and monitor regions to measure properties. You can also add annotations.
 
+The algorithms include:
+* Managing a discrete-time simulation with both soft (forces) and hard (collisions) interactions
+* Modified Lennard-Jones interaction between molecules
+* Elastic collision interactions between molecules, walls and pistons
+* Ineleastic collisions between molecules and walls (to set temperature)
+* Reactive collisions between molecules above an activation energy, conserving momentum, respecting a formation energy
+* Interactions to allow monitoring regions to measure and control properties
+
 Finally, scripts can be recorded and replayed to provide repeatable demonstrations, for
 teaching.
+
+## System Requirements
+SimChemistry for Windows 2.2 should run under any 32-bit version of Windows (95 or higher).
+
+## General
 
 This project was previously available at http://www.simchemistry.co.uk, but I may not renew
 that domain again, hence it is now here. However, it is not maintained.
