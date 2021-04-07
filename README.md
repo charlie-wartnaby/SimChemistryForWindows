@@ -1,4 +1,4 @@
-# SimChemistryForWindows
+# SimChemistryForWindows ![icon](pictures/scwicon.gif)
 
 Archived source, documents and executable for SimChemistry for Windows
 
@@ -10,6 +10,8 @@ SimChemistry for Windows is a project dating back to the 1990s (with C++ style t
 idea was that it allowed users to set up and then run live molecular dynamics simulations on
 screen, to better understand physical and chemical principles that emerge from
 microscopic behaviour.
+
+See below for some screenshots.
 
 Although the code is pretty much obsolete, it has some heavily commented algorithms which may
 still be of interest. It features both event-based simulation (e.g. when molecules are modelled
@@ -43,3 +45,17 @@ for details.
 Finally, I'm embarrassed to say that the code is indented mainly with tabs (as was the
 Microsoft fashion when it started) but in places with spaces too, which looks horrible
 now it is here on GitHub. Ah, the wisdom of age...
+
+## Screenshots
+
+### Elementary States of Matter Simulation (school level)
+![matter screenshot](pictures/matterscreen.gif)
+
+### Simple Reaction Example (school level)
+![Reaction screenshot](pictures/reactionscreen.gif)
+
+### Brownian Motion Tutorial (school level)
+![Brownian motion screenshot](pictures/bmotionscreen.gif)
+
+### Binary non-ideal liquid mixture and vapour measurements (to undergraduate level)
+![binary mixture screenshot](pictures/binaryscreen.gif)
